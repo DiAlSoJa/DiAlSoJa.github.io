@@ -26,9 +26,7 @@
     /* transform: scale(4); */
 }
 .fondo .img1{
-    transform: scale(4);
-    top: 0;
-    left: 0;
+    opacity: .3;
 
 }
 
@@ -93,10 +91,7 @@
 }
 
 @media (max-width: 700px) {
-    .fondo .img1{
-        transform: scale(3);
 
-    }
     
     .fondo .img2{
         height: 60vh;

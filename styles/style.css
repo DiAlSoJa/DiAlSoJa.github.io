@@ -45,14 +45,10 @@ html{
     position: relative;
     min-height: 100vh;
     background-color: #000;
-}
-.overflow{
-    overflow: hidden;
-    position: relative;
-    
     width: 100%;
-    min-height: 100vh;
+    overflow: hidden;
 }
+
 .navigation-container{
     position: fixed;
     background-color: rgba(0,0,0,.3);
@@ -171,6 +167,7 @@ html{
     transform: translateY(-50%);
     width: 70%;
     text-align: justify;
+    padding: 1rem;
 }
 
 .home .parrafo .title{
@@ -229,7 +226,7 @@ html{
     align-items: center;
     justify-content: center;
     color:#fff;
-    
+    padding: 1rem;
 }
 
 .about-left-content{
@@ -239,6 +236,7 @@ html{
     border-radius: 12px;
     height: 100%;
     text-align: center;
+    padding: 2rem;
 }
 .about-left-content h2{
     font-size: 2rem;
@@ -380,68 +378,6 @@ html{
 .portfolio{
     
 }
-.my-work-container{
-    
-    width: 100%;
-    text-align: center;
-   
-}
-.portfolio .card{
-    text-align: center;
-    display: inline-block;
-    margin-left: 2rem;
-}
-.portfolio .card-container{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--light);
-    border-radius: 1rem;
-    width: 25rem;
-    height: 600px;
-    overflow: hidden;
-    border: 4px solid var(--dark);
- 
-    box-shadow: 0px -5px 53px -10px rgba(255,255,255,.3);
-}
-.description-container{
-    padding: 1rem 2rem;
-}
-.portfolio .card .img-container{
-    width: 100%;
-}
-.portfolio .card img{
-    width: 25rem;
-    margin: 0 auto;
-}
-.portfolio .card .description-container .title-card{
-    font-size: 1.8rem;
-    margin: .3rem 0;
-    color: var(--dark);
-
-}
-.portfolio .card .description-card{
-    text-align: justify;
-    font-weight: 800;
-}
-.portfolio .card .link-card{
-
-    display: inline-block;
-    background-color: var(--dark);
-    color: var(--light);
-    font-weight: 700;
-    padding: .5rem 1rem;
-    border-radius: 2rem;
-    cursor: pointer;
-    margin: 1rem 0;
-
-    transition: transform .3s ease;
-}
-.portfolio .card .link-card:hover{
-
-   transform: scale(1.1);
-}
-
 
 /* Contact */
 
@@ -456,6 +392,8 @@ html{
 .contact-container .mensage{
     color: #fff;
     text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 4rem;
 }
 .contact-container .mensage h3{
     font-size: 1.7rem;
@@ -465,6 +403,7 @@ html{
     font-size: 1.4rem;
     margin-bottom: 2rem;
 }
+
 .contactos{
     margin-bottom: 2rem;
 }
@@ -505,10 +444,10 @@ height:9rem;
 }
 .contact-container .formulario label{
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: .5rem;
-    color:var(--gray);
-    font-weight: 800;
+    color:#fff;
+    font-weight: 1000;
     text-transform: capitalize;
 }
 .contact-container .formulario input{
@@ -541,14 +480,15 @@ height:9rem;
 }
 .boton-enviar{
     padding: .5rem 1rem;
-    border: 1px solid var(--gray);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     font-size: 1.3rem;
     width: 30%;
     font-weight: 800;
     transition: transform .2s ease;
-    background-color: var(--dark);
-    color: var(--gray);
+    background-color: rgb(148, 28, 142);
+    color: #fff;
+    cursor: pointer;
 }
 .boton-enviar:hover{
     transform: scale(1.03);
@@ -704,12 +644,24 @@ height:9rem;
 }
 
 @media screen and (max-width:550px){
+    .section-title{
+
+        font-size: 4rem;
+        font-weight:bolder;
+        margin-bottom: 6rem;
+    }
+    .home{
+        /* margin-top: 7rem; */
+        padding: 8rem .5rem 1rem;
+    }
     .contact{
         padding: 1rem;
     }
+    
     .contact-container .left{
         
         padding: 0;
+        
     }
     .contact-container .right{
 
@@ -720,6 +672,12 @@ height:9rem;
         font-size: 1.6rem;
 
         
+    }
+    .home .parrafo {
+        margin-bottom: 3rem;
+    }
+    .home .parrafo p{
+        margin-bottom: 2rem;
     }
     .home .parrafo p{
         font-size: 1.7rem
@@ -791,16 +749,28 @@ height:9rem;
     .home .parrafo p{
         font-size: 1.rem
     }
+    .about-right{
+        margin-top: 3rem;
+    }
     .about-right button{
         width: 80%;
         display: block;
         margin: 1rem auto 2rem;
         font-size: 1.5rem;
     }
+    .about-right  p{
+        font-weight: 800;
+    }
     .portfolio .card {
         width: 100%;
     }
     .portfolio .card .card-container{
+        width: 100%;
+    }
+    .about-left-content{
+        width: 100%;
+    }
+    .about-left-content{
         width: 100%;
     }
     .about-left-content h2{

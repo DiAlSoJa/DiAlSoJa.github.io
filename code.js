@@ -32,11 +32,8 @@ const typed = new Typed(".typing",{
 window.addEventListener("scroll",()=>{
     let height = innerHeight;
     let value = window.scrollY;
-    let scale=4;
 
-    if(window.innerWidth<=700) scale=3;
-    else scale=4;
-  console.log(cielo)
+
     // if(value>height){
     //   fondo.style.position="absolute";
     //   fondo.style.top=height+"px";
@@ -44,7 +41,7 @@ window.addEventListener("scroll",()=>{
     //   fondo.style.position="fixed";
     //   fondo.style.top="0";
     // }
-    cielo.style.transform= `scale(${mapear(value,0,height,scale,1)})`;
+    cielo.style.opacity= `${mapear(value,height*.3,height*2,.3,1)}`;
 
 
     if(value>=height*.3){
