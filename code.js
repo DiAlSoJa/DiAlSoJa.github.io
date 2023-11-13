@@ -45,16 +45,16 @@ window.addEventListener("scroll",()=>{
 
 
     if(value>=height*.3){
-       mon.style.bottom =`${mapear(value,height*.3,height*.8,-100,0)}%`;
+       mon.style.bottom =`${mapear(value,height*.3,height*1.8,-100,0)}%`;
     }else{
       mon.style.bottom =`-100%`;
     }
 
     if(value>= height*.6){
-      arbol.style.left =`${mapear(value,height*.6,height,-70,0)}%`;
+      arbol.style.left =`${mapear(value,height*.6,height*1.5,-70,0)}%`;
     }
 
-    if(value>=height*.98){
+    if(value>=height*1.88){
       if(window.innerWidth>=2030){
         elpendejo.style.height="150%";
       }else {
